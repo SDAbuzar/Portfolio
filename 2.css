@@ -1,3 +1,8 @@
+*::selection{
+  background-color: #117864;
+  color: white;
+}
+
 /* Base Styles */
 body {
   margin: 0;
