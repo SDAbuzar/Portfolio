@@ -3,6 +3,11 @@
   color: white;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -36,8 +41,6 @@ nav.navbar {
   padding: 1rem 2rem;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
   z-index: 10;
   transition: background-color 0.3s;
 }
