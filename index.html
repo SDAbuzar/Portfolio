@@ -5,165 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abuzarali | Portfolio</title>
 
+    <link rel="website icon" type="png"  href="assets/images/Image.png">
+
     <!-- Fonts & Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="2.css" />
+      rel="stylesheet" />
+      
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Header -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">Abuzarali</div>
-        <div class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="dark-toggle" id="darkToggle">
-          <svg
-            id="toggleIcon"
-            class="icon moon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#117864"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z"
-            />
-          </svg>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Hero -->
-    <main>
-      <section class="hero-section">
-        <div class="hero-left" data-aos="fade-right">
-          <h1>Hi, my name is <span class="highlight">Abuzarali</span></h1>
-          <h2>& I am a passionate</h2>
-          <span id="element" class="typed-text"></span>
-          <div class="buttons">
-            <a href="resume.pdf" class="btn" download>Download Resume</a>
-            <a href="#contact" class="btn">Hire Me</a>
+  <!-- ===== Header ===== -->
+  <header>
+
+    <nav class="navbar">
+      <div class="logo">Abuzarali.</div>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="dark-toggle" id="darkToggle">
+        <svg id="toggleIcon" class="icon moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#117864" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
+        </svg>
+      </div>
+    </nav>
+
+  </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+
+      <div class="hero-left" data-aos="fade-right">
+        <h1>Hi, my name is <span class="highlight">Abuzarali</span></h1>
+        <h2>& I am a passionate</h2>
+        <span id="typed-wrapper">
+        <span id="element" class="typed-text" aria-label="Animated typing roles" ></span>
+        </span>
+        <div class="buttons">
+          <a href="assets/resume.pdf" class="btn" download="Abuzarali_Resume.pdf" >Download Resume</a>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img  src="assets/images/Image.png" alt="Abuzarali profile picture" loading="lazy" />
+      </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-aos="fade-up">
+
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="assets/images/About-1.pn" alt="about">
+        </div> 
+        <div class="about-p">
+          <p>
+            I’m a passionate and creative web designer with a strong focus on building responsive, accessible, and user-friendly websites that deliver seamless digital experiences. My core skills lie in HTML, CSS, and JavaScript, which I use to bring dynamic and visually engaging interfaces to life. I have a keen eye for design, usability, and performance, and I enjoy crafting clean, intuitive layouts that not only look great but also function flawlessly across all devices.  
+          </p>
+          
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="content">
+            <i class="fas fa-school icon"></i>
+            <h3>SSC</h3>
+            <p>Vinayakrao Patil Madhayamik Vidhayalay | 2019 | 76.20%</p>
           </div>
         </div>
-        <div class="hero-right" data-aos="fade-left">
-          <img src="Image.png" alt="Profile" />
-        </div>
-      </section>
 
-      <!-- About -->
-      <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-          I’m a web designer with a passion for building responsive and
-          user-friendly websites. I specialize in HTML, CSS, JavaScript, and
-          love learning new technologies to improve my craft.
-        </p>
-      </section>
-
-      <!-- Education -->
-      <section id="education" data-aos="fade-up">
-        <h2>Education</h2>
-        <p>SSC | Vinayakrao Patil Madhayamik Vidhayalay | 2019 | 76.20%</p>
-        <p>
-          HSC | Maulana Azad College of Arts, Science and Commerce | 2021 | 84%
-        </p>
-        <p>
-          B.Sc (Computer Science) | Maulana Azad College of Arts, Science and
-          Commerce | 2024 | 64%
-        </p>
-        <p>
-          M.Sc (Computer Science) | Dr. Babasaheb Ambedkar Marathwada University
-          | Appearing
-        </p>
-      </section>
-
-      <!-- Projects -->
-      <section id="project" data-aos="fade-up">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Coffee Shop Management System</h3>
-           
-            <p>
-              The Coffee Shop Management System is a responsive project built
-              using HTML, CSS, and JavaScript.
-            </p>
-            <a
-              href="https://sdabuzar.github.io/Coffee-Shop-Management/"
-              target="_blank"
-              >View project</a
-            >
-          </div>
-
-          <div class="project-card">
-            <h3>Line Following Robot</h3>
-            
-            <p>
-              A 4-wheel robot built using Arduino and IR sensors that follows a
-              black line autonomously.
-            </p>
-            <a
-              href="Line Following Rover.mp4"
-              target="_blank"
-              class="project-btn"
-              >Watch Video</a
-            >
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="content">
+            <i class="fas fa-building icon"></i>
+            <h3>HSC</h3>
+            <p>Maulana Azad College | 2021 | 84%</p>
           </div>
         </div>
-      </section>
 
-      <!-- Contact -->
-      <section id="contact" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <ul class="contact-list">
-          <li>
-            <i class="fas fa-envelope"></i> Email:
-            <a href="mailto:sayyadabuzarali03@gmail.com"
-              >sayyadabuzarali03@gmail.com</a
-            >
-          </li>
-          <li>
-            <i class="fas fa-phone"></i> Phone:
-            <a href="tel:+919975787053">+91 9975787053</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="content">
+            <i class="fas fa-laptop-code icon"></i>
+            <h3>B.Sc (Computer Science)</h3>
+            <p>Maulana Azad College | 2024 | 64%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="content">
+            <i class="fas fa-user-graduate icon"></i>
+            <h3>M.Sc (Computer Science)</h3>
+            <p>Dr. BAMU | Appearing</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" data-aos="fade-up">
+
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Coffee Shop Management System</h3>
+          <img src="assets/images/project-1.png" alt="Coffee Shop Project Preview" />
+          <p>
+            A responsive Coffee Shop Management System built with HTML, CSS, and
+            JavaScript.
+          </p>
+          <a href="https://sdabuzar.github.io/Coffee-Shop-Management/" target="_blank" class="project-btn" >
+            View Project
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Line Following Robot</h3>
+          <img src="assets/images/project-2.png" alt="Line Following Robot Preview" />
+          <p>
+            A 4-wheel robot using Arduino and IR sensors that autonomously
+            follows a black line.
+          </p>
+          <a href="Line Following Rover.mp4" target="_blank" class="project-btn" >
+            Watch Video
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact-section">
+
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">
+        Send Message
+      </button>
+    </form>
+
+  </section>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Abuzarali | All rights reserved.</p>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/sayyad-abuzarali-6b8b1b29b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/SDAbuzar" target="_blank"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.linkedin.com/in/sayyad-abuzarali-6b8b1b29b"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/SDAbuzar" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="2.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
